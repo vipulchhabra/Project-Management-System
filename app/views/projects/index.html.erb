@@ -1,0 +1,61 @@
+<div id="project_list" >
+<h1>Listing projects</h1>
+
+
+<%= form_tag projects_path, :method => 'get' do %>
+   <%= hidden_field_tag :direction, params[:direction] %>
+  <%= hidden_field_tag :sort, params[:sort] %>
+  <%= hidden_field_tag :search, params[:search] %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+
+<table>
+<tr>
+<th><%= sortable "Fieldname", "Field Name" %></th>
+<th><%= sortable "description", "Description" %></th>
+<th><%= sortable "start_date", "Start Date" %></th>
+<th><%= sortable "end_date", "End Date" %></th>
+</tr>
+<% @projects.each do |project| %>
+<tr class="<%= cycle('list_line_odd', 'list_line_even') %>" >
+
+<td>
+<%= project.fieldname %>
+</td>
+
+<td>
+<%= project.description %>
+</td>
+
+<td>
+<%= project.start_date %>
+</td>
+
+<td>
+<%= project.end_date %>
+</td>
+
+<td class="list_actions" >
+<%= link_to 'Show', project %>
+<%= link_to 'Edit', edit_project_path(project) %>
+<%= link_to 'Destroy', project, :method => :delete, confirm: 'Are you sure' %>
+</td>
+
+<td><%= link_to "Assign to user", endusers_path(project_id: project.id) %></td>
+</tr>
+
+<% end %>
+
+</table>
+<%= will_paginate @projects %>
+</div>
+
+<%= link_to 'New project', new_project_path %>
+
+
+
+

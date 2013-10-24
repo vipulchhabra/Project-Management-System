@@ -1,0 +1,511 @@
+    1  ruby exhand.rb 
+    2  vi exhand
+    3  vi exhand.rb 
+    4  ruby exhand.rb 
+    5  vi exhand.rb 
+    6  vi exhand.rb
+    7  ruby exhand.rb
+    8  ruby exhandtry.rb
+    9  cd ..
+   10  cd vipcs
+   11  rake test
+   12  bundle exec
+   13  bundle install
+   14  rake test
+   15  bundle exec rake test
+   16  rake test
+   17  bundle exec rake test
+   18  rake test
+   19  bundle exec rake test
+   20  cd ..
+   21  cd divanshu
+   22  ls
+   23  git add exhandtry.rb
+   24  git commit -m "second commit"
+   25  vipul1234
+   26  ls
+   27  git add exhandtry.rb
+   28  git commit -m "second"
+   29  git add exhandtry.rb
+   30  git commit -m "second"
+   31  git push
+   32  cd ..
+   33  cd vipcs
+   34  git status
+   35  rake rake test:functionals
+   36  rake test:functionals
+   37  bundle exec rake test:functionals
+   38  rails generate scaffold enduser
+   39  rake db:migrate
+   40  bundle exec rake db:migrate
+   41  rails generate scaffold line_item product_id:integer cart_id:integer
+   42  rails destroy scaffold line_item product_id:integer cart_id:integer
+   43  rails destroy scaffold enduser
+   44  rails generate scaffold enduser firstname:string lastname:string empno:Integer dateofbirth:date address:text
+   45  rake db:migrate
+   46  bundle exec rake db:migrate
+   47  bundle exec run migrate
+   48  bundle exec rake db:migrate
+   49  bundle exec rake db:migrate RAILS_ENV=test
+   50  bundle exec rake test:prepare
+   51  bundle exec rake db:rollback
+   52  bundle exec rake db:migrate
+   53  rake db:migrate
+   54  bundle exec rake db:migrate
+   55  bundle exec rake db:rollback
+   56  bundle exec rake db:migrate
+   57  rails c
+   58  rake db:migrate RAILS_ENV=development
+   59  bundle exec rake db:migrate RAILS_ENV=development
+   60  clear
+   61  bundle exec rake db:migrate RAILS_ENV=development --trace
+   62  clear
+   63  bundle exec rake db:migrate RAILS_ENV=development --trace
+   64  sqlite3
+   65  clear
+   66  bundle exec rake db:migrate RAILS_ENV=development --trace
+   67  clear
+   68  bundle exec rake db:migrate RAILS_ENV=development --trace
+   69  clear
+   70  bundle exec rake db:migrate RAILS_ENV=development --trace
+   71  rails c
+   72  clear
+   73  rake routes
+   74  bundle exec rake routes
+   75  rails generate controller mainadmin
+   76  rake routes
+   77  bundle exec rake routes
+   78  cd ..
+   79  cd vipcs
+   80  rails generate migration AddGenderToEndusers gender:string
+   81  rake db:migrate
+   82  bundle exec rake db:migrate
+   83  rake routes
+   84  bundle exec rake routes
+   85  cd vipcs
+   86  rails server
+   87  rails new comp
+   88  rails c
+   89  rails generate controller welcome index
+   90  rake routes
+   91  rails g controller projects 
+   92  rails c
+   93  bundle exec rake routes
+   94  cd ..
+   95  cd vipcs
+   96  bundle exec rake routes
+   97  rake routes
+   98  bundle exec rake routes
+   99  bundle exec rails server
+  100  bundle exec rake routes
+  101  rails generate migration AddEnduser_idToProjects
+  102  rake db:migrate
+  103  bundle exec rake db:migrate
+  104  rails c
+  105  irb
+  106  cd comp
+  107  rails server
+  108  cd ..
+  109  cd vipcs
+  110  rails server
+  111  cls
+  112  clear
+  113  rails s
+  114  clear
+  115  rails s
+  116  cls
+  117  clear
+  118  rails s
+  119  clear
+  120  bundle exec rake routes
+  121  clear
+  122  bundle exec rake routes
+  123  clear
+  124  bundle exec rake routes
+  125  clear
+  126  bundle exec rake routes
+  127  clear
+  128  bundle exec rake routes
+  129  clear
+  130  bundle exec rake routes
+  131  clear
+  132  rails s
+  133  clear
+  134  rails s
+  135  clear
+  136  rails s
+  137  rails server
+  138  rails s
+  139  rails server
+  140  bundle install
+  141  rails server
+  142  confirmclear
+  143  clear
+  144  rails s
+  145  rails server
+  146  rails g model EndusersProject enduser_id:integer project_id:integer
+  147  bundle exec rake db:migrate
+  148  bundle exec rake routes
+  149  bundle exec rale routes
+  150  bundle exec rake routes
+  151  rails c
+  152  rake db:migrate
+  153  bundle exec rake db:migrate
+  154  rails c
+  155  rails s
+  156  rails c
+  157  rails server
+  158  rails s
+  159  rails 
+  160  rails s
+  161  rails server
+  162  rails s
+  163  rails --version
+  164  bundle install
+  165  bundle exec rake routes
+  166  rails generate controller userproject index
+  167  bundle exec rake routes
+  168  rails c
+  169  bundle exec rake routes
+  170  rails generate model joinprouser enduser_id:integer project_id:integer
+  171  rails c
+  172  rake db:migrate
+  173  bundle exec rake db:migrate
+  174  rails c
+  175  rails server
+  176  rails c
+  177  rails s
+  178  bundle install
+  179  rails generate devise_install
+  180  bundle install
+  181  rails generate devise_install
+  182  rails generate devise User
+  183  bundle exec rake db:migrate
+  184  rails c
+  185  rails s
+  186  budle install
+  187  bundle install
+  188  bundle exec rake db:migrate
+  189  bundle install
+  190  budleinstall
+  191  bundle install
+  192  rake routes
+  193  bundle exec rake routes
+  194  bundle exec rake db:migrate
+  195  rails c
+  196  clear
+  197  rails c
+  198  bundle exec rake routes
+  199  cd vipcs
+  200  cd..
+  201  cd ..
+  202  mkdir application
+  203  cd application
+  204  git init
+  205  git add .
+  206  git commit -m 'first commit'
+  207  git remote add origin https://github.com/vipul1234/application.git
+  208  git push origin master
+  209  git remote add origin https://github.com/vipul1234/application.git
+  210  git push origin master
+  211  cd ..
+  212  rails console
+  213  cd vipcs
+  214  rails console
+  215  rails generate migration AddHobbiesToEndusers hobbies:string
+  216  bundle exec rake db:migrate
+  217  rails c
+  218  cd vipcs
+  219  rails s
+  220  cd vipcs
+  221  rails server
+  222  rails s
+  223  rails c
+  224  cd ~/.ssh
+  225  ssh-keygen -t rsa -C "vipul.chhabra@tcs.com"
+  226  ssh-add id_rsa
+  227  sudo apt-get install xclip
+  228  xclip -sel clip < ~/.ssh/id_rsa.pub
+  229  cd vipcs
+  230  bundle exec rake routes
+  231  rails c
+  232  rails g migration change_data_type_for_dateofbirth
+  233  bundle exec db:migrate
+  234  bundle exec db:migrate 
+  235  rake db:migrate
+  236  bundle exec rake db:migrate
+  237  p=project.last
+  238  bundle exec rake routes
+  239  tail -f log/development.log 
+  240  script/plugin install git://github.com/thoughtbot/paperclip.git
+  241  install: missing destination file operand after `git://github.com/thoughtbot/paperclip.git'
+  242  script/plugin install git://github.com/thoughtbot/paperclip.git
+  243  bundle install
+  244  generate paperclip enduser photo
+  245  script/generate paperclip enduser photo
+  246  generate paperclip enduser photo
+  247  rails generate paperclip enduser photo
+  248  rails c
+  249  bundle exec rake db:migrate
+  250  rails c
+  251  cd vipcstrial
+  252  vim app/controllers/endusers_controller.rb 
+  253  sudo apt-get ionstall vim
+  254  sudo apt-get install vim
+  255  cd vipcs 
+  256  cd ..
+  257  cd vipcstrial
+  258  rails s
+  259  rails thin start
+  260  thin start
+  261  cd ..
+  262  cd vipcs
+  263  thin start
+  264  bundle install
+  265  gem install better_error
+  266  bundle install
+  267  gem install better_error
+  268  gem install better_errors
+  269  bundle install
+  270  gem install better_errors
+  271  rails c
+  272  rails generate paperclip enduser photo
+  273  rails c
+  274  Enduser.inspect
+  275  rails c
+  276  bundle install
+  277  rails c
+  278  bundle exec rake db:migrate
+  279  rails c
+  280  bundle install
+  281  rails g client_side_validations:install
+  282  vi app/controllers/endusers_controller.rb 
+  283  tail -f log/development.log 
+  284  vi app/controllers/endusers_controller.rb 
+  285  vim app/controllers/endusers_controller.rb 
+  286  bundle install
+  287  gem install better_error
+  288  sudo apt-get install imagemagick
+  289  cd ..
+  290  cd vipcs
+  291  thin start
+  292  bundle install
+  293  rake db:create:all
+  294  bundle exec rake db:create:all
+  295  require "capybara/rspec"
+  296  $ rspec spec/models/project_spec.rb
+  297  bundle exec rake db:migrate
+  298  rspec spec/models/project_spec.rb
+  299  rake db:migrate
+  300  bundle exec rake db:migrate
+  301  rake db:migrate RAILS_ENV=test
+  302  bundle exec rake db:migrate RAILS_ENV=test
+  303  clear
+  304  rspec spec/models/project_spec.rb
+  305  bundle exec db:rollback
+  306  bundle exec rake db:rollback
+  307  rspec spec/models/project_spec.rb
+  308  bundle exec rake db:migrate
+  309  rspec spec/models/project_spec.rb
+  310  bundle exec rake db:migrate RAILS_ENV=test
+  311  clear
+  312  rake db:create:all
+  313  bundle exec rake db:create:all
+  314  bundle install
+  315  bundle exec rake db:migrate RAILS_ENV=test
+  316  rspec spec/models/project_spec.rb
+  317  bundle exec rake db:drop RAILS_ENV=test 
+  318  bundle exec rake db:create RAILS_ENV=test
+  319  bundle exec rake db:schema:load RAILS_ENV=test
+  320  $ rspec spec/models/project_spec.rb
+  321  rspec spec/models/project_spec.rb
+  322  heroku login
+  323  git remote show
+  324  ls
+  325  git status
+  326  git init
+  327  git status
+  328  git add .
+  329  git s
+  330  git status
+  331  git commit -m "deploy commit"
+  332  git branch
+  333  heroku create 
+  334  git remote show
+  335  vim
+  336  vim config/database.yml 
+  337  vim Gemfile
+  338  bundle install
+  339  sudo apt-get install postgresql postgresql-contrib
+  340  libpg -dev
+  341  libpg-dev
+  342  sudo apt-get install libpg-dev
+  343  sudo apt-get install postgresql-9.1 libpq-dev
+  344  locate postgresql
+  345  psql -v
+  346  psql - V
+  347  psql -V
+  348  bundle isntall
+  349  bundle install
+  350  git push heroku +master
+  351  pwd
+  352  subl . &
+  353  sublime
+  354  locate sublime_text
+  355  cd ~/Downloads/Sublime\ Text\ 2/
+  356  ls
+  357  ./sublime_text . &
+  358  pwd
+  359  cd -
+  360  ls
+  361  ./home/vipul/Downloads/Sublime\ Text\ 2/sublime_text . &
+  362  sudo ln -s /usr/bin/sublime ~/Downloads/Sublime\ Text\ 2
+  363  sudo ln -s /usr/bin/sublime ~/Downloads/Sublime\ Text\ 2/sublime_text 
+  364  sudo rm /usr/bin/sublime
+  365  sudo ln -s ~/Downloads/Sublime\ Text\ 2/sublime_text /usr/bin/sublime
+  366  sublime
+  367  sublime . &
+  368  git status
+  369  git add Gemfile Gemfile.lock config/database.yml
+  370  git commit --amend
+  371  git push heroku +master
+  372  git status
+  373  git rm -rf public/
+  374  git status
+  375  git commit --amend
+  376  git push -u heroku +master
+  377  git commit --amend
+  378  thin start
+  379  git status
+  380  git add app/
+  381  git commit --amend
+  382  git push -u heroku +master
+  383  config/database.yml
+  384  vim config/database.yml
+  385  git add config
+  386  git add
+  387  git commit --amend
+  388  git push heroku +master
+  389  heroku run rake db:migrate
+  390  vim config/database.yml 
+  391  heroku open
+  392  heroku run rake db:migrate
+  393  heroku run rake db:setup
+  394  heroku run "ruby -v"
+  395  heroku config -s | grep PATH
+  396  heroku config:set PATH=bin:vendor/bundle/ruby/1.9.1/bin:/usr/local/bin:/usr/bin:/bin
+  397  heroku run rake db:migrate
+  398  vim Gemfile
+  399  git add Gemfile
+  400  git s
+  401  git status
+  402  git add Gemfile
+  403  git commit --amend
+  404  git push heroku +master
+  405  bundle install --local
+  406  ruby -v
+  407  rvm use 2.0.0
+  408  rvm install 2.0.0
+  409  rvm use --default 2.0.0
+  410  ruby -v
+  411  rvm use 2.0.0
+  412  /bin/bash --login
+  413  rvm use 2.0.0
+  414  bundle install
+  415  git status
+  416  git add .
+  417  git commit --amend
+  418  git status
+  419  heroku run rake db:migrate
+  420  bundle config --delete bin
+  421  rake rails:update:bin
+  422  f
+  423  git add bin
+  424  git status
+  425  git commit --amend 
+  426  git push heroku +master
+  427  heroku run rake db:migrate
+  428  git status
+  429  git add db/
+  430  git commit --amend
+  431  git push heroku +master
+  432  heroku run rake db:migrate
+  433  git add db/
+  434  git commit --amend
+  435  git push -u heroku +master
+  436  heroku run rake db:migrate
+  437  git add db/
+  438  git commit --amend
+  439  git push -u heroku +master
+  440  heroku run rak db:migrate
+  441  heroku run rake db:migrate
+  442  heroku open
+  443  heroku run rake assets:precompile
+  444  history
+  445  who am i
+  446  git status
+  447  git add app
+  448  git status
+  449  git diff --color config
+  450  git rm app/assets/stylesheets/dwnl.css.scss app/assets/stylesheets/dwnl.css.scss~  
+  451  git status 
+  452  git add config
+  453  git status
+  454  git commit --amend
+  455  git push heroku +master
+  456  heroku run rake db:migrate
+  457  heroku run rake db:migrate
+  458  heroku open
+  459  heroku run rake assets:precompile
+  460  heroku open
+  461  git status
+  462  git add gemfile
+  463  git add Gemfile
+  464  history
+  465  git diff --color config
+  466  git status
+  467  git add Gemfile
+  468  git commit --ammend
+  469  git push heroku master
+  470  heroku run rake db:migrate
+  471  heroku open
+  472  git status
+  473  git add Gemfile config/
+  474  git status
+  475  git commit --amend
+  476  git push heroku +master
+  477  bundle install
+  478  git status
+  479  history
+  480  git commit --amend
+  481  history
+  482  git push heroku +master
+  483  bundle package
+  484  git add vendor/
+  485  git commit --amend
+  486  git push heroku +master
+  487  bundle install
+  488  git status
+  489  git add Gemfile
+  490  git rm vendor/
+  491  git rm vendor/cache/sqlite3-1.3.8.gem
+  492  git status
+  493  git status
+  494  git commit --amend
+  495  git push heroku +master
+  496  heroku run assets:precompile
+  497  heroku run rake assets:precompile
+  498  heroku open
+  499  heroku open
+  500  cd vipcs
+  501  heroku open
+  502  git status
+  503  git add .
+  504  git commit --ammend
+  505  git push heroku +master
+  506  heroku run rake db:migrate
+  507  git commit --ammend
+  508  git push heroku master
+  509  heroku open
+  510  history
+  511  history > cmd.txt

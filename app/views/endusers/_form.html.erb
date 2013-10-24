@@ -1,0 +1,61 @@
+    <%= form_for(@enduser, :html => { :multipart => true }) do |f| %>
+      <% if @enduser.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@enduser.errors.count, "error") %> prohibited this enduser from being saved:</h2>
+
+          <ul>
+          <% @enduser.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="field">
+        <%= f.label :firstname %><br>
+        <%= f.text_field :firstname %>
+      </div>
+      <div class="field">
+        <%= f.label :lastname %><br>
+        <%= f.text_field :lastname %>
+      </div>
+      <div class="field">
+        <%= f.label :empno %><br>
+        <%= f.text_field :empno %>
+      </div>
+      <div class="field">
+        <%= f.label :dateofbirth  %><br>
+        <%= f.text_field :dateofbirth, id: "datepicker", placeholder: "dd/mm/yyyy" %>
+      </div>
+      <div class="field">
+        <%= f.label :address %><br>
+        <%= f.text_area :address  %>
+      </div>
+      <div class="field">
+        <%= f.label :gender %><br>
+        <%= f.label :gender, "Male", :value => "true"  %>
+        <%= f.radio_button :gender, true, :checked => true %>
+        <%= f.label :gender, "Female", :value => "false" %>
+        <%= f.radio_button :gender, false %>
+      </div>
+      <div class="field">
+       <%= f.label :hobbies %><br>
+       <%= check_box_tag(:hobbies) %>
+       <%= label_tag(:hobbies, "Singing") %>
+       <%= check_box_tag(:hobbies) %>
+       <%= label_tag(:hobbies, "Dancing") %>
+       <%= check_box_tag(:hobbies) %>
+       <%= label_tag(:hobbies, "Reading") %>
+       <%= check_box_tag(:hobbies) %>
+       <%= label_tag(:hobbies, "Music") %>
+      </div><br>
+      
+      <div>
+        <%= f.label :photo, "Upload your Photo: " %>
+        <%= f.file_field :photo %>
+      </div><br>
+
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %>
