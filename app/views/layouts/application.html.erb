@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>ROYAL Consultancy Services</title>
+<%= stylesheet_link_tag "scaffolds", :media => "all" %>
+<%= stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => true %>
+<%= stylesheet_link_tag "effects", :media => "all", "data-turbolinks-track" => true %>
+<%= stylesheet_link_tag "dwnl", :media => "all"%>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<%= stylesheet_link_tag "jquery", :media => "all"%>
+<%= csrf_meta_tag %>  
+
+
+<meta charset="utf-8" />
+<!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
+</head>
+
+<div id="user_nav">
+  <% if user_signed_in? %>
+    Signed in as <%= current_user.email %>. Not you?
+    <%= link_to "Sign out", destroy_user_session_path %>
+  <% else %>
+    <%= link_to "Sign up", new_user_registration_path %> or
+    <%= link_to "Sign in", new_user_session_path %>
+  <% end %>
+</div>
+
+
+<body id="store" >
+
+<div id="banner" >
+
+<%= @page_title || "Royal Consultancy Services" %>
+</div>
+
+<div id="columns" >
+<div id="side" >
+   <%= image_tag("images1.jpg", size:"150x100", alt: "logo") %><br />
+<a href="/" style = "color:#000000">Home</a><br />
+<a href="/mainadmin/faqs" style = "color:#000000">Questions</a><br />
+<a href="/mainadmin/news" style = "color:#000000">News</a><br />
+<a href="/mainadmin/contactus" style = "color:#000000">Contact</a><br /><br />
+ <% if user_signed_in? && current_user.role == "admin" %>
+  <p style = "color:#000000">    HELLO ADMIN !!!! </p>
+    <%= button_to "Project index", projects_path, :method => :get %><br />
+    <%= button_to "User index", userindex_endusers_path, :method => :get %>
+  <% elsif user_signed_in? && current_user.role == "user" %>
+  <p style = "color:#000000">    HELLO USER !!!! </p>
+  <p style = "color:#000000"> Click the button below to see the projects allocated to  users:::: </p>
+  <%= button_to "Users list", userslist_endusers_path, :method => :get %>
+  <% else %>
+   <%= flash[:error] %>
+   <% end %>
+</div>
+
+
+<div id="main" >
+<div class = "container">
+  <% flash.each do |key,value| %>
+  <strong><div class ="alert alert-<%= key %>"><%= value %>
+  </div></strong>
+  <% end %>
+</div>
+<%= yield %>
+</div>
+
+
+
+</div>
+</div>
+<% if user_signed_in? && current_user.role == "admin" %>
+<marquee scrollamount="3" behavior="alternate" direction="right" width="2000"><strong>
+  Go to the project index to assign projects to user </strong></marquee>
+<% end %>
+<br/><br/><br/>
+
+<p><%= image_tag("footer.jpg", size: "1250x180", alt: "footer") %></p>
+</body>
+</html>
