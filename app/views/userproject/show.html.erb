@@ -1,0 +1,36 @@
+<div id="project_list" >
+<h1>Listing projects</h1>
+
+<table>
+<tr>
+<th><%= "Field Name" %></th>
+<th><%= "Description" %></th>
+<th><%= "Start Date" %></th>
+<th><%= "End Date" %></th>
+</tr>
+
+<% @projects.each do |project| %>
+<tr class="<%= cycle('list_line_odd', 'list_line_even') %>" >
+
+<td>
+<%= project.Fieldname %>
+</td>
+
+<td>
+<%= project.description %>
+</td>
+
+<td>
+<%= project.start_date %>
+</td>
+
+<td>
+<%= project.end_date %>
+</td>
+
+</tr>
+
+<% end %>
+
+</table>
+</div>
